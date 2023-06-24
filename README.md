@@ -23,3 +23,10 @@ ve temel sepete işlevine sahip olan e-ticaret projesi
 - Sepet butonuna tıklanınca
 - - bir pencere aç
 - - içerisindeki X butonuna tıklanınca kapansın
+
+
+## Preview
+[Live Preview](https://simple-e-ticaret.netlify.app/)
+
+<img src="https://user-images.githubusercontent.com/109925130/224724322-ca469732-d327-40aa-9b89-b34799e40b6c.gif" >
+
