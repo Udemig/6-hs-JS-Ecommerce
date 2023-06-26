@@ -23,3 +23,13 @@ ve temel sepete işlevine sahip olan e-ticaret projesi
 - Sepet butonuna tıklanınca
 - - bir pencere aç
 - - içerisindeki X butonuna tıklanınca kapansın
+
+- Sepete ekle butonuna tıklanıldığında:
+- - sepete eklemek istediğin elemenı console yaz
+- - sepete eklenen ürünü bir diziye aktar
+- - sepet açıldığı anda dizideki ürünleri akrana bas
+- - sepet kapandığı anda modal'ın html'ini temizle
+
+- sepetteki ürünleri ekrana baserken fiyat değerleini topla ve bir değişkene aktar
+- - bu işlemi yaprken elemanın miktarını unutma
+- - ürün sepetten kladılırınca toplam fiyattan eksilt

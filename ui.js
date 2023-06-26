@@ -2,6 +2,7 @@
 
 const categoryList = document.querySelector('.categories');
 const productList = document.querySelector('.products');
+const basketList = document.querySelector('.list');
 
 export function renderCategories(categories) {
   // kategoriler dizisindeki herbir obje için ekran kart basma
@@ -46,10 +47,36 @@ export function renderProducts(products) {
             <p>${product.category.name}</p>
             <div class="product-info">
               <p>${product.price} $</p>
-              <button>Sepete Ekle</button>
+              <button id="add-btn" data-id=${product.id}>Sepete Ekle</button>
             </div>      
       `;
       //   elemanı html'e gönderme
       productList.appendChild(productCard);
     });
 }
+
+// ürünü ekran basma fonksiyonu
+export function renderBasketItem(product) {
+  const basketItem = document.createElement('div');
+
+  basketItem.classList.add('list-item');
+
+  basketItem.innerHTML = `
+   <img src=${product.images[0]} />
+   <h2>${product.title}</h2>
+   <h2>${product.price}</h2>
+   <p>Miktar: ${product.amount}</p>
+   <button id="del-button" data-id=${product.id}>sil</button>
+  `;
+
+  basketList.appendChild(basketItem);
+}
+
+// Alternatif yöntem:
+// document.body.addEventListener('click', (event) => {
+//   if (event.target === sepetBtn) {
+//     modal.classList.add('active');
+//   } else if (event.target === closeBtn) {
+//     modal.classList.remove('active');
+//   }
+// });
